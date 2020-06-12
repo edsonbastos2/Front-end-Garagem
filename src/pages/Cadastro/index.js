@@ -3,7 +3,8 @@ import LogoImg from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
-import './style.css'
+import './style.css';
+import '../../global.css';
 function Cadastro() {
   return (
     <div className="cadastro-container">
@@ -17,8 +18,15 @@ function Cadastro() {
             Voltar
           </Link>
         </section>
-        <form>
+        <form className="formCad">
+          <input placeholder="Nome da Unidade"/>
+          <input placeholder="Número da quadra"/>
+          <input placeholder="Responsável"/>
+          <input placeholder="Data Desejada"/>
+          <input placeholder="Horario Desejado"/>
+          <input placeholder="Operador"/>
 
+          <button className="button" type="submit">Cadastrar</button>
         </form>
       </div>
     </div>
